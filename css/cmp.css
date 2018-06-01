@@ -1,0 +1,178 @@
+#employee-name 
+{
+    display:block;
+    font-size:2em;
+    font-weight:semibold;
+    margin-left:10px;
+}
+
+#info-block 
+{
+    display:block;
+    font-size:1em;
+    font-weight:semibold;
+    margin-left:20px;
+}
+
+#employee-role
+{
+    display:block;
+    font-size:1.3em;
+    margin-left:1em;
+    margin-top:0.1em;
+    font-weight:normal;
+    color:gray;
+}
+
+#profile-picture
+{
+    height:100px;
+}
+
+div#email
+{
+    display:block;
+}
+
+#email img
+{
+    margin-left:1em;
+    height:1.8em;
+}
+
+#email a
+{
+    font-size:1.3em;
+}
+
+#info-block a.link-item
+{
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.top-buffer-20
+{ 
+    margin-top:20px; 
+}
+
+.top-buffer-40
+{ 
+    margin-top:40px; 
+}
+
+.valign  
+{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.panel > .panel-heading 
+{
+    background-image: none;
+    background-color: white;
+    color: black;
+}
+
+.panel 
+{
+    border: 0;
+    box-shadow: none;
+}
+
+.parent 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+li.borderless 
+{ 
+    border: 0 none; 
+    box-shadow: none;    
+    margin-left:0px;
+    padding-left: 0px;
+}
+
+ul.borderless
+{
+    border: 0 none; 
+    box-shadow: none;    
+} 
+
+a.link-item
+{
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+
+.invited-talk
+{
+}
+
+.invited-talk .name a
+{
+    margin-right: 1em;
+    color: black;
+}
+
+.invited-talk div.title
+{
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.invited-talk .location
+{
+    font-size: 100%;
+}
+
+.conference-paper
+{
+}
+
+.conference-paper a.conference-name 
+{
+    float: left;
+    width: 200px; 
+    color: black;
+    font-size: 100%;
+}
+
+.conference-paper div.authors
+{
+    display: block;
+    font-size: 100%;
+}
+
+.conference-paper div.authors span.me
+{
+    font-weight: bold;
+}
+
+.conference-paper span.title
+{
+    display: block;
+    font-weight: bold;
+    margin-right: 1em;
+    font-size: 100%;
+}
+
+.course
+{
+}
+
+.course .title 
+{
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.course a.number
+{
+    font-size: 85%;
+    color:black;
+    margin-left: 0.5em;
+}

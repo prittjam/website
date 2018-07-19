@@ -27,18 +27,32 @@
 	<img src="img/jpritts.jpg" alt="James Pritts" class="img-circle" id="profile-picture" style="margin-left:10px">
       </div>
       <div class="col-xs-9 col-sm-3 col-lg-3 top-buffer-20">
-	<span id="employee-name" class="text-nowrap">James PRITTS</span>
-        <!--	<span id="employee-role">researcher</span> -->
+	<span id="employee-name" class="text-nowrap">James
+          PRITTS</span> <!-- <span id="employee-role">researcher</span>
+			  -->
 	<div id="info-block">
-          [<a target="_blank" href="https://goo.gl/i7thwe" class="link-item">vitae</a> | <script type=text/javascript><!--
-e=new Array(122,99,46,116,117,118,99,64,109,97,106,116,116,105,114,112);
-b='';for(i=e.length;i--;)b+='&#'+e[i]+';';document.write(b.link('mailto:'+b))
-//--></script>]
-	</div>
+	  <div class="left-info">email:</div>
+	  <div class="right-info">
+	    <script type=text/javascript><!--
+					     e=new Array(122,99,46,116,117,118,99,64,109,97,106,116,116,105,114,112);
+					     b='';for(i=e.length;i--;)b+='&#'+e[i]+';';document.write(b.link('mailto:'+b))
+					     //--></script>
+	  </div>
+
+	  <div class="left-info">profile:</div>
+	  <div class="right-info">
+	    <a target="_blank" href="https://scholar.google.cz/citations?user=fvTKAEUAAAAJ&hl=en"><img src="img/scholar.png"
+									     alt="google scholar" class="online-profile"></a>
+	    <a target="_blank" href="https://www.researchgate.net/profile/James_Pritts"><img src="img/researchgate.png"
+									     alt="ResearchGate" class="online-profile"></a>
+	    <a target="_blank" href="https://www.linkedin.com/in/jbpritts/"><img src="img/linkedin.png"
+								 alt="LinkedIn" class="online-profile"></a>		    
+	  </div>
+	</div>	
       </div>
       
       <div class="hidden-xs col-sm-3 col-lg-2 top-buffer-20">
-	  <a href="http://www.cvut.cz/"><img src="img/kulatelogo.jpg" alt="cvut" style="max-height:100px;float:right"></a> 
+	<a href="http://www.cvut.cz/"><img src="img/kulatelogo.jpg" alt="cvut" style="max-height:100px;float:right"></a> 
       </div>
     </div>
     
@@ -50,7 +64,7 @@ b='';for(i=e.length;i--;)b+='&#'+e[i]+';';document.write(b.link('mailto:'+b))
       <div class="col-xs-12 col-sm-8 col-lg-6">
 	<div class="panel panel-default">
 	  <div class="panel-heading">
-	    <h3 class="panel-title">Research interests</h3>
+	    <h3 class="panel-title">Research Interests</h3>
 	  </div>
 	  <div class="panel-body">
             modeling repeated content in images with an emphasis on
@@ -66,6 +80,19 @@ b='';for(i=e.length;i--;)b+='&#'+e[i]+';';document.write(b.link('mailto:'+b))
 	  <div class="panel-body">
 	    <ul class="list-group borderless">
 	      <li class="list-group-item borderless conference-paper">
+		<span class="title">Rectification from Radially-Distorted Scales</span>
+		<div class="authors">
+		  <span class="me">J. Pritts</span>, Z. Kukelova, V. Larrson, O. Chum
+		</div>
+                <a target="_blank" href="https://arxiv.org/abs/1807.06110" class="conference-name">In arXiv 2018</a>
+		[
+		<a target="_blank" href="https://arxiv.org/pdf/1807.06110.pdf" class="link-item">pdf</a> |
+		<a target="_blank" href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2018arXiv180706110P&data_type=BIBTEX&db_key=PRE&nocookieset=1" class="link-item">bibtex</a> |
+		<a target="_blank" href="https://github.com/prittjam/repeats" class="link-item">code</a>
+		]
+	      </li>
+
+	      <li class="list-group-item borderless conference-paper">
 		<span class="title">Radially-Distorted Conjugate Translations</span>
 		<div class="authors">
 		  <span class="me">J. Pritts</span>, Z. Kukelova, V. Larrson, O. Chum
@@ -73,7 +100,10 @@ b='';for(i=e.length;i--;)b+='&#'+e[i]+';';document.write(b.link('mailto:'+b))
                 <a target="_blank" href="http://cvpr2018.thecvf.com/" class="conference-name">In CVPR 2018</a>
 		[
 		<a target="_blank" href="https://arxiv.org/pdf/1711.11339" class="link-item">pdf</a> |
-		<a target="_blank" href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-11339" class="link-item">bibtex</a>
+		<a target="_blank" href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-11339" class="link-item">bibtex</a> |
+		<a target="_blank" href="https://github.com/prittjam/repeats" class="link-item">code</a> |
+		<a target="_blank" href="https://goo.gl/jbGcDJ" class="link-item">poster</a> |
+		<a target="_blank" href="https://www.slideshare.net/jbpritts/radiallydistorted-conjugate-translations" class="link-item">slides</a>
 		]
 	      </li>
 
@@ -99,7 +129,8 @@ b='';for(i=e.length;i--;)b+='&#'+e[i]+';';document.write(b.link('mailto:'+b))
                 <span class="paper_nav">
 		  [
 		  <a target="_blank" href="doc/cvpr14.pdf" class="link-item">pdf</a> | 
-		  <a target="_blank" href="http://dblp.uni-trier.de/rec/bibtex/conf/cvpr/PrittsCM14" class="link-item">bibtex</a> | 
+		  <a target="_blank" href="http://dblp.uni-trier.de/rec/bibtex/conf/cvpr/PrittsCM14" class="link-item">bibtex</a> |
+		  <a target="_blank" href="https://github.com/prittjam/repeats" class="link-item">code</a> |
 		  <a target="_blank" href="https://goo.gl/NJAtSe" class="link-item">poster</a> |
 		  <a target="_blank" href="http://techtalks.tv/talks/detection-rectification-and-segmentation-of-coplanar-repeated-patterns/59915/" class="link-item">video</a>
 		  ]
@@ -129,6 +160,19 @@ b='';for(i=e.length;i--;)b+='&#'+e[i]+';';document.write(b.link('mailto:'+b))
 	  </div>
 	  <div class="panel-body">
 	    <ul class="list-group borderless">
+	      <li class="list-group-item borderless invited-talk">
+		<div class="title">Opportunities and Risks of Artificial Intelligence</div>
+		<div class="name">
+		  <a target="_blank" href="https://www.aspeninstitutece.org/event/aspen-young-leaders-program-2018/">The Aspen Institute’s 2018 Young Leader’s Program</a><span class="location">Tále, SK</span><br>
+		</div>
+	      </li>
+
+	      <li class="list-group-item borderless invited-talk">
+		<div class="title">Radially Distorted Conjugate Translations</div>
+		<div class="name">
+		  <a target="_blank" href="">Ukrainian Catholic University Data Science Colloquium</a><span class="location">Lviv, UK</span><br>
+		</div>
+	      </li>
 
 	      <li class="list-group-item borderless invited-talk">
 		<div class="title">Detection, rectification, and segmentation of co-planar repeated patterns</div>
@@ -183,23 +227,22 @@ b='';for(i=e.length;i--;)b+='&#'+e[i]+';';document.write(b.link('mailto:'+b))
 	  <div class="panel-body">
 	    <p>
               Mr. Pritts works at The Czech Institute for Informatics,
-              Robotics and Cybernetics at Czech Technical University
-              in Prague, where he is responsible for conducting novel
-              research in computer vision and machine
+              Robotics and Cybernetics (CIIRC) at Czech Technical
+              University in Prague, where he is responsible for
+              conducting novel research in computer vision and machine
               learning. Mr. Pritts is in the Applied Algebra and
               Geometry Group led by Dr. Tomas Pajdla.  Mr. Pritts's
               research focuses on modeling repeated content in images
               and multi-model estimation, and he is published at the
               leading research conferences for computer vision.  Prior
-              to joining the Visual Recognition Group, Mr. Pritts had
-              an industry career in computer vision: He was a lead
-              engineer at BAE Systems, where he contributed to several
-              US Department of Defense (DARPA) computer-vision
-              research efforts, and at NASA he created
-              gesture-recognition software. Mr. Pritts received his
-              B.Sc. in Mathematics at The University of North Texas
-              and his M.Sc. in Computer Science from Czech Technical
-              University with distinction.
+              to joining CIIRC, Mr. Pritts had an industry career in
+              computer vision: He was a lead engineer at BAE Systems,
+              where he contributed to several US Department of Defense
+              (DARPA) computer-vision research efforts, and at NASA he
+              created gesture-recognition software. Mr. Pritts
+              received his B.Sc. in Mathematics at The University of
+              North Texas and his M.Sc. in Computer Science from Czech
+              Technical University with distinction.
 	    </p>
 	  </div>
 	</div>

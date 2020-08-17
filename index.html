@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>James Pritts, CIIRC home page</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.0/font/css/open-iconic-bootstrap.min.css" />
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 	    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -21,11 +22,49 @@
   </head>
 
   <body>
-    <div class="row">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#publications">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+    
+<div class="row">
       <div class="col-sm-2 col-lg-3"></div>
       <div class="col-xs-3 col-sm-2 col-lg-1 top-buffer-20">
 	<img src="img/jpritts.jpg" alt="James Pritts" class="img-circle" id="profile-picture" style="margin-left:10px">
       </div>
+
       <div class="col-xs-9 col-sm-3 col-lg-3 top-buffer-20">
 	<span id="employee-name" class="text-nowrap">James
           PRITTS</span> <!-- <span id="employee-role">researcher</span>
@@ -52,14 +91,19 @@
 	<a href="http://www.cvut.cz/"><img src="img/kulatelogo.jpg" alt="cvut" style="max-height:100px;float:right"></a>
       </div>
     </div>
-
-    <div class="col-sm-2 col-lg-3">
-    </div>
-
+    
+    <ul class="nav justify-content-center nav-tabs">
+      <li class="nav-item">
+	<a class="nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+	<a class="nav-link" href="publications.html">Publications</a>
+      </li>
+    </ul>
+    
     <div class="row top-buffer-40">
       <div class="col-sm-2 col-lg-3"></div>
       <div class="col-xs-12 col-sm-8 col-lg-6">
-
 	<div class="panel panel-default">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">Research Interests</h3>
@@ -70,7 +114,6 @@
             multi-model estimation.
 	  </div>
 	</div>
-
 	<div class="panel panel-default">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">Awards</h3>
@@ -84,121 +127,151 @@
 	    </ul>
 	  </div>
 	</div>
-
 	<div class="panel panel-default">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">Selected Publications</h3>
 	  </div>
-	  <div class="panel-body">
-	    <ul class="list-group borderless">
 
-	      <li class="list-group-item borderless conference-paper">
-		<span class="title">Minimal Solvers for Rectifying from Radially-Distorted Conjugate Translations</span>
-		<div class="authors">
-		  <span class="me">J. Pritts</span>, Z. Kukelova, V. Larsson, Y. Lochman, O. Chum
-		</div>
-                <a target="_blank" href="https://ieeexplore.ieee.org/document/9086062" class="conference-name">PAMI 2020</a>
-		[
-		<a target="_blank" href="https://arxiv.org/pdf/1911.01507.pdf" class="link-item">pdf</a> |
-		<a target="_blank" href="https://docs.google.com/document/d/17_-Gyi1OFKXXy-kkhMY8gRFufGLwtre0NWIMrDzU_G8/edit?usp=sharing" class="link-item">bibtex</a> |
-		<a target="_blank" href="https://github.com/prittjam/repeats" class="link-item">code</a>
-		]
-	      </li>
+  <div class="card-body">
+    <h5 class="card-title">Minimal Solvers for Rectifying from Radially-Distorted Conjugate Translations</h5>
+    <div class="card-text">
+	<span class="font-weight-bold"> J. Pritts,</span>, Z. Kukelova, V. Larsson, Y. Lochman, O. Chum
+	<br/>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2020
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-document"></i> pdf
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-book"></i> bibtex
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-code"></i> code
+    </button>
+  </div>
+</div>
+<div class = "card border-0 bg-light mt-2 row no-gutters">
+  <div class="card-body">
+    <h5 class="card-title">Minimal Solvers for Rectifying from Radially-Distorted Scales and Change of Scales</h5>
+    <div class="card-text">
+	<span class="font-weight-bold">J. Pritts,</span>, Z. Kukelova, V. Larsson, Y. Lochman, O. Chum
+	<br/>International Journal of Computer Vision (IJCV) 2020
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-document"></i> pdf
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-book"></i> bibtex
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-code"></i> code
+    </button>
+  </div>
+</div>
+<div class = "card border-0 bg-light mt-2 row no-gutters">
+  <div class="card-body">
+    <h5 class="card-title">Rectification from Radially-Distorted Scales</h5>
+    <div class="card-text">
+	<p class="card-text"><span class="font-weight-bold">J. Pritts,</span>, Z. Kukelova, V. Larsson, O. Chum
+	<br/>Asian Conference on Computer Vision (ACCV) 2018</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-document"></i> pdf
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-book"></i> bibtex
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-code"></i> code
+    </button>
+  </div>
+</div>
+<div class = "card border-0 bg-light mt-2 row no-gutters">
+  <div class="card-body">
+    <h5 class="card-title">Radially-Distorted Conjugate Translations</h5>
+    <p class="card-text"><span class="font-weight-bold">J. Pritts,</span>, Z. Kukelova, V. Larsson, O. Chum
+	<br/>Conference on Computer Vision and Pattern Recognition (CVPR) 2018</p>
+  </div>
+  <div class="card-footer">
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-document"></i> pdf
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-book"></i> bibtex
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-code"></i> code
+    </button>
+  </div>
+</div>
+<div class = "card border-0 bg-light mt-2 row no-gutters">
+  <div class="card-body">
+    <h5 class="card-title">Coplanar Repeats by Energy Minimization</h5>
+    <p class="card-text"><span class="font-weight-bold">J. Pritts,</span>, D. Rozumnyi, M. P. Kumar, O. Chum
+	<br/>British Machine Vision Conference (BMVC) 2016</p>
+  </div>
+  <div class="card-footer">
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-document"></i> pdf
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-book"></i> bibtex
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-code"></i> code
+    </button>
+  </div>
+</div>
+<div class = "card border-0 bg-light mt-2 row no-gutters">
+  <div class="card-body">
+    <h5 class="card-title">Detection, Rectification and Segmentation of Coplanar Repeated Patterns</h5>
+    <p class="card-text"><span class="font-weight-bold">J. Pritts,</span>, O. Chum, J. Matas
+	<br/>Conference on Computer Vision and Pattern Recognition (CVPR) 2014</p>
+  </div>
+  <div class="card-footer">
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-document"></i> pdf
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-book"></i> bibtex
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-code"></i> code
+    </button>
+  </div>
+</div>
+<div class = "card border-0 bg-light mt-2 row no-gutters">
+  <div class="card-body">
+    <h5 class="card-title">Approximate Models for Fast and Accurate Epipolar Geometry Estimation</h5>
+    <p class="card-text"><span class="font-weight-bold">J. Pritts,</span>, O. Chum, J. Matas
+	<br/>Image and Vision Computing New Zealand (IVCVNZ) 2013</p>
+  </div>
+  <div class="card-footer">
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-document"></i> pdf
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-book"></i> bibtex
+    </button>
+    <button class="btn" style="background-color:transparent;">
+	<i class="oi oi-code"></i> code
+    </button>
+  </div>
+</div>
 
-	      <li class="list-group-item borderless conference-paper">
-		<span class="title">Minimal Solvers for Rectifying from Radially-Distorted Scales and Change of Scales</span>
-		<div class="authors">
-		  <span class="me">J. Pritts</span>, Z. Kukelova, V. Larsson, Y. Lochman, O. Chum
-		</div>
-                <a target="_blank" href="https://link.springer.com/article/10.1007/s11263-019-01216-x" class="conference-name">IJCV 2020</a>
-		[
-		<a target="_blank" href="https://arxiv.org/pdf/1907.11539.pdf" class="link-item">pdf</a> |
-		<a target="_blank" href="https://dblp.org/rec/bibtex/journals/ijcv/PrittsKLLC20" class="link-item">bibtex</a> |
-		<a target="_blank" href="https://github.com/prittjam/repeats" class="link-item">code</a>
-		]
-	      </li>
+	  
 
-	      <li class="list-group-item borderless conference-paper">
-		<span class="title">Rectification from Radially-Distorted Scales</span>
-		<div class="authors">
-		  <span class="me">J. Pritts</span>, Z. Kukelova, V. Larsson, O. Chum
-		</div>
-                <a target="_blank" href="https://arxiv.org/abs/1807.06110" class="conference-name">ACCV 2018</a>
-		[
-		<a target="_blank" href="https://arxiv.org/pdf/1807.06110.pdf" class="link-item">pdf</a> |
-		<a target="_blank" href="https://dblp.org/rec/bibtex/journals/corr/abs-1807-06110" class="link-item">bibtex</a> |
-		<a target="_blank" href="https://github.com/prittjam/repeats" class="link-item">code</a>
-		]
-	      </li>
-
-	      <li class="list-group-item borderless conference-paper">
-		<span class="title">Radially-Distorted Conjugate Translations</span>
-		<div class="authors">
-		  <span class="me">J. Pritts</span>, Z. Kukelova, V. Larsson, O. Chum
-		</div>
-                <a target="_blank" href="http://cvpr2018.thecvf.com/" class="conference-name">CVPR 2018</a>
-		[
-		<a target="_blank" href="https://arxiv.org/pdf/1711.11339" class="link-item">pdf</a> |
-		<a target="_blank" href="https://dblp.org/rec/bibtex/conf/cvpr/PrittsKLC18" class="link-item">bibtex</a> |
-		<a target="_blank" href="https://github.com/prittjam/repeats" class="link-item">code</a> |
-		<a target="_blank" href="https://goo.gl/jbGcDJ" class="link-item">poster</a> |
-		<a target="_blank" href="https://www.slideshare.net/jbpritts/radiallydistorted-conjugate-translations" class="link-item">slides</a>
-		]
-	      </li>
-
-	      <li class="list-group-item borderless conference-paper">
-                <span class="title">Coplanar Repeats by Energy Minimization</span>
-		<div class="authors">
-		  <span class="me">J. Pritts</span>, D. Rozumnyi, M. P. Kumar, O. Chum
-		</div>
-		<a target="_blank" href="http://bmvc2016.cs.york.ac.uk/" class="conference-name">BMVC 2016</a>
-		[
-		<a target="_blank" href="http://arxiv.org/pdf/1711.09432" class="link-item">pdf</a> |
-		<a target="_blank" href="http://dblp.uni-trier.de/rec/bibtex/conf/bmvc/PrittsRKC16" class="link-item">bibtex</a> |
-                <a target="_blank" href="https://goo.gl/txjyMi" class="link-item">poster</a>
-		]
-	      </li>
-
-              <li class="list-group-item borderless conference-paper">
-                <span class="title">Detection, Rectification and Segmentation of Coplanar Repeated Patterns</span>
-		<div class="authors">
-		  <span class="me">J. Pritts</span>, O. Chum, J. Matas
-		</div>
-		<a target="_blank" href="http://www.pamitc.org/cvpr14/" class="conference-name">CVPR 2014</a>
-                <span class="paper_nav">
-		  [
-		  <a target="_blank" href="doc/cvpr14.pdf" class="link-item">pdf</a> |
-		  <a target="_blank" href="http://dblp.uni-trier.de/rec/bibtex/conf/cvpr/PrittsCM14" class="link-item">bibtex</a> |
-		  <a target="_blank" href="https://github.com/prittjam/repeats" class="link-item">code</a> |
-		  <a target="_blank" href="https://goo.gl/NJAtSe" class="link-item">poster</a> |
-		  <a target="_blank" href="http://techtalks.tv/talks/detection-rectification-and-segmentation-of-coplanar-repeated-patterns/59915/" class="link-item">video</a>
-		  ]
-                </span>
-	      </li>
-
-	      <li class="list-group-item borderless conference-paper">
-                <span class="title">Approximate Models for Fast and Accurate Epipolar Geometry Estimation</span>
-                <div class="authors">
-		  <span class="me">J. Pritts</span>, O. Chum, J. Matas
-		</div>
-		<a target="_blank" href="http://ecs.victoria.ac.nz/Events/IVCNZ2013/WebHome" class="conference-name">IVCVNZ 2013</a>
-		[
-		<a target="_blank" href="doc/ivcvnz13.pdf" class="link-item">pdf</a> |
-		<a target="_blank" href="http://dblp.uni-trier.de/rec/bibtex/conf/ivcnz/PrittsCM13" class="link-item">bibtex</a> |
-		<a target="_blank" href="http://www.slideshare.net/jbpritts/ivcvnz13" class="link-item">slides</a>
-		]
-	      </li>
-
-	    </ul>
-	  </div>
-	</div>
-
-	<div class="panel panel-default">
-	  <div class="panel-heading">
-	    <h3 class="panel-title">About</h3>
-	  </div>
-	  <div class="panel-body">
-	    <p>
+	  <div class="panel panel-default">
+	    <div class="panel-heading">
+	      <h3 class="panel-title">About</h3>
+	    </div>
+	    <div class="panel-body">
+	      <p>
 	      Mr. Pritts currently is a Post-Doctoral Research Scientist at Facebook
 	      Reality Labs, where he is responsible for conducting novel research in
 	      computer vision. He also serves as adjunct adviser for The Machine

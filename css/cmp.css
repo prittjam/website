@@ -1,4 +1,4 @@
-#employee-name 
+#employee-name
 {
     display:block;
     font-size:2em;
@@ -6,7 +6,7 @@
     margin-left:10px;
 }
 
-#info-block 
+#info-block
 {
     display:block;
     font-size:1em;
@@ -57,61 +57,60 @@ img.online-profile
 }
 
 .top-buffer-20
-{ 
-    margin-top:20px; 
+{
+    margin-top:20px;
 }
 
 .top-buffer-40
-{ 
-    margin-top:40px; 
+{
+    margin-top:40px;
 }
 
-.valign  
+.valign
 {
     vertical-align: middle;
     display: inline-block;
 }
 
-.panel > .panel-heading 
+.panel > .panel-heading
 {
     background-image: none;
     background-color: white;
     color: black;
 }
 
-.panel 
+.panel
 {
     border: 0;
     box-shadow: none;
 }
 
-.parent 
+.parent
 {
   display: flex;
   flex-direction: column;
   justify-content: right;
 }
 
-li.borderless 
-{ 
-    border: 0 none; 
-    box-shadow: none;    
+li.borderless
+{
+    border: 0 none;
+    box-shadow: none;
     margin-left:0px;
     padding-left: 0px;
 }
 
 ul.borderless
 {
-    border: 0 none; 
-    box-shadow: none;    
-} 
+    border: 0 none;
+    box-shadow: none;
+}
 
 a.link-item
 {
     margin-left: 0.3em;
     margin-right: 0.3em;
 }
-
 
 .invited-talk
 {
@@ -138,18 +137,17 @@ a.link-item
 {
 }
 
-.conference-paper a.conference-name 
+.conference-paper span.conference-name
 {
-    float: left;
-    width: 200px; 
-    color: black;
-    font-size: 100%;
+    display: block;
+    margin-right: 1em;
+    font-size: 90%;
 }
 
 .conference-paper div.authors
 {
     display: block;
-    font-size: 100%;
+    font-size: 90%;
 }
 
 .conference-paper div.authors span.me
@@ -162,14 +160,19 @@ a.link-item
     display: block;
     font-weight: bold;
     margin-right: 1em;
-    font-size: 100%;
+    font-size: 110%;
+}
+
+.conference-paper div.paper-nav
+{
+    display: block;
 }
 
 .course
 {
 }
 
-.course .title 
+.course .title
 {
     font-weight: bold;
     margin-right: 1em;
